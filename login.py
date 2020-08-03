@@ -1,9 +1,27 @@
 # -*- coding: utf-8 -*-
-from linepy import *
+# Kalo ga jalan ini sc berarti gua masih nub :v
+from Newbielib import *
+from Newbielib.akad.ttypes import Message 
+from Newbielib.akad.ttypes import ContentType as Type 
+import json, requests, sys 
+from akad.ttypes import ContentType as Type 
+from akad.ttypes import Message 
+from multiprocessing import Pool, Process 
+from time import sleep 
+import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib3, wikipedia, html5lib 
+from datetime import timedelta, date 
+from liff.ttypes import LiffChatContext, LiffContext, LiffSquareChatContext, LiffNoneContext, LiffViewRequest 
+_session = requests.session()
+from datetime import datetime 
+from bs4 import BeautifulSoup 
+from googletrans import Translator 
+from gtts_token.gtts_token import Token  
+from gtts import gTTS 
+import youtube_dl
 
-line = LINE('EMAIL', 'PASSWORD')
+#line = LINE('EMAIL', 'PASSWORD')
 #line = LINE('AUTHTOKEN')
-
+line = LINE() #loginqr
 line.log("Auth Token : " + str(line.authToken))
 
 # Initialize OEPoll with LINE instance
